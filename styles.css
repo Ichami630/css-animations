@@ -1,0 +1,15 @@
+body{
+    background: lightblue;
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+img{
+    /* transform: translate(200px,200px); moves elm to left,right,top,bottom as the case may be */
+    /* transform: scale(3,2); stretches or shrinks the elmt to the X, Y,etc axis as the case may be */
+    /* transform: rotate(-180deg); */
+    transform: rotate(90deg) scale(2) translate(100px,100px);
+}
