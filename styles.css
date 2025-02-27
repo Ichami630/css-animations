@@ -13,3 +13,22 @@ img{
     /* transform: rotate(-180deg); */
     transform: rotate(90deg) scale(2) translate(100px,100px);
 }
+
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    border-radius: 50px;
+    background: pink;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    /* transition: background 2s, transform 0.3s; apply diff ttransition to diff property */
+    transition: 1s;
+    /* transition: background 1s, transform 1s 1s ease-in; transition on diff properties with delay of 1s with speed (ease-in,ease-out,linear,etc) */
+}
+.circle:hover{
+    background: salmon;
+    transform: rotate(360deg);
+}
