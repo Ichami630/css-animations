@@ -84,12 +84,32 @@ img{
     animation-duration: 5s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-direction: reverse;
+    animation-direction: normal;
     animation-timing-function: linear;
+}
+
+.cloud{
+    position: absolute;
+}
+.cloud:nth-child(1){
+    width: 200px;
+    opacity: 0.5;
+    top: 120px;
+    animation: wind 60s linear infinite reverse;
+}
+.cloud:nth-child(2){
+    top: 0;
+    width: 300px;
+    animation: wind 50s linear infinite reverse;
 }
 
 /* keyframes */
 @keyframes drive{
     from{transform: translateX(-200px);}
     to{transform: translateX(100vw);}
+}
+
+@keyframes wind{
+    from{left: -300px}
+    to{left: 100%}
 }
