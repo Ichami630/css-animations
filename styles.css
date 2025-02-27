@@ -75,6 +75,17 @@ img{
     animation-iteration-count: infinite;
 }
 
+.brandon{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
 /* keyframes */
 @keyframes drive{
     from{transform: translateX(-200px);}
