@@ -1,7 +1,7 @@
-body{
+/* body{
     background: lightblue;
     text-align: center;
-}
+} */
 .wrapper{
     width: 100%;
     padding: 20px;
@@ -11,7 +11,7 @@ img{
     /* transform: translate(200px,200px); moves elm to left,right,top,bottom as the case may be */
     /* transform: scale(3,2); stretches or shrinks the elmt to the X, Y,etc axis as the case may be */
     /* transform: rotate(-180deg); */
-    transform: rotate(90deg) scale(2) translate(100px,100px);
+    /* transform: rotate(90deg) scale(2) translate(100px,100px); */
 }
 
 .circle{
@@ -31,4 +31,48 @@ img{
 .circle:hover{
     background: salmon;
     transform: rotate(360deg);
+}
+.sky,.grass,.road{
+    position: relative;
+}
+.sky{
+    background: lightblue;
+    height: 250px;
+}
+.grass{
+    background: seagreen;
+    height: 150px;
+}
+.road{
+    background: dimgrey;
+    height: 200px;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    box-sizing: border-box;
+}
+.lines{
+    text-align: center;
+    box-sizing: border-box;
+    border: 5px dashed;
+    width: 100%;
+    height: 0px;
+    color: white;
+    position: absolute;
+    top: 45%;
+}
+
+/* elements to animate */
+.ichami{
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 3s;
+}
+
+/* keyframes */
+@keyframes drive{
+    from{transform: translateX(0);}
+    to{transform: translateX(700px);}
 }
