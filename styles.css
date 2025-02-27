@@ -69,10 +69,12 @@ img{
     left: 0px;
     animation-name: drive;
     animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
 }
 
 /* keyframes */
 @keyframes drive{
-    from{transform: translateX(0);}
-    to{transform: translateX(700px);}
+    from{transform: translateX(200px);}
+    to{transform: translateX(90vw);}
 }
