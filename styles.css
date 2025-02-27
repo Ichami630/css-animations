@@ -1,7 +1,8 @@
-/* body{
-    background: lightblue;
-    text-align: center;
-} */
+body{
+    /* background: lightblue;
+    text-align: center; */
+    overflow: hidden;
+}
 .wrapper{
     width: 100%;
     padding: 20px;
@@ -70,11 +71,12 @@ img{
     animation-name: drive;
     animation-duration: 3s;
     animation-fill-mode: both;
-    animation-delay: 2s;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
 }
 
 /* keyframes */
 @keyframes drive{
-    from{transform: translateX(200px);}
-    to{transform: translateX(90vw);}
+    from{transform: translateX(-200px);}
+    to{transform: translateX(100vw);}
 }
