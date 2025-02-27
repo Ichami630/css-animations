@@ -73,6 +73,7 @@ img{
     animation-fill-mode: both;
     /* animation-delay: 2s; */
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .brandon{
@@ -84,6 +85,7 @@ img{
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-direction: reverse;
+    animation-timing-function: linear;
 }
 
 /* keyframes */
